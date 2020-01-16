@@ -1,0 +1,57 @@
+.doctor-panel{
+	padding-top: 79px;
+	padding-bottom: 125px;
+	h2{
+		margin-bottom: 122px;
+	}
+	@media (min-width: 1200px){
+		padding-top: 129px;
+		padding-bottom: 175px;
+	}
+}
+
+.doctor-panel__doctors{
+
+	@media(min-width: 1200px){
+		display: flex;
+		-webkit-justify-content: space-between;
+		justify-content: space-between;
+		}
+}
+.doctor-panel__doctor{
+	
+}
+.doctor-panel__doctor-description{
+	background-color: #0050D5;
+	text-align: center;
+	padding-bottom: 13px;
+	width: 441px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+	border-top:1px solid black;
+	
+	@media (min-width: 1200px){
+		margin: 0;
+		margin-right: 10px;
+		border: none;
+		&:last-child{
+			margin-right: 0;
+		}
+	}
+	&:last-child{
+		margin-bottom: 0;
+		
+	}
+	img{
+		margin-bottom: 23px;
+	}
+}
+
+.doctor-panel__doctor-spec{
+	font-size: 31px;
+	font-weight: 400;
+	color: #FFF;
+	margin: 0;
+	line-height: 1;
+}

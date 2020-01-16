@@ -1,0 +1,68 @@
+.button{
+	display: inline-block;
+	cursor: pointer;
+	text-align: center;
+	width: 165px;
+	-webkit-border-radius: 23px;
+	        border-radius: 23px;
+	font-size: 18.75px;
+	line-height: 1;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	text-transform: capitalize;
+	-webkit-box-shadow: 1px 1px 20px @shadow-blue;
+		box-shadow: 1px 1px 20px @shadow-blue;
+	transition: all .15s linear;
+	&:hover,&:focus,&:active{
+		outline: none;
+	}
+}
+.button--bigger{
+	width: 225px;
+	padding-top: 22px;
+	padding-bottom: 20px;
+	-webkit-border-radius: 30px;
+	        border-radius: 30px;
+}
+.button--gray-shadow{
+	-webkit-box-shadow: 1px 1px 20px #9c9c9c;
+		box-shadow: 1px 1px 20px #9c9c9c;
+}
+.button-sign{
+	margin-right: 55px;
+	background-color: #FFF;
+	color: #1181ff;
+	&:hover,&:focus{
+		background-color: #1181ff;
+		color: #FFF;
+	}
+	&:active{
+		background-color: #1181ff;
+		color: @yellow;
+	}
+}
+.button-learn{
+	background-color: #16c5ff;
+	color: #fff;
+	&:hover,&:focus{
+		background-color: #fff;
+		color: #16c5ff;
+	}
+	&:active{
+		background-color: @yellow;
+		color: #16c5ff;
+	}
+}
+.button-learn--modify{
+	color: #656565;
+	&:hover,&:focus{
+		background-color: #656565;
+		color: #fff;
+	}
+	&:active{
+		background-color: #656565;
+		color: #fff;
+		-webkit-box-shadow: 1px 1px 20px #656565;
+		box-shadow: 1px 1px 20px #656565;
+	}
+}

@@ -1,0 +1,92 @@
+header{
+	background-color: #0050D5;
+	padding-top: 60px;
+}
+
+//FIRST ROW
+.logo{
+	a{
+		color: #fff;
+		&:hover,&:focus,&:active{
+			color: @yellow;
+		}
+	}
+}
+.header__navigation{
+	font-size: 19px;
+	font-weight: 600;
+	line-height: 1;
+}
+.header__navigation-list{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	li{
+		display: inline-block;
+		margin: 0;
+		padding: 0;
+		margin-right: 55px;
+		padding-top: 20px;
+		&:last-child{
+			margin-right: 0;
+		}
+		a{
+			text-decoration: none;
+			color: #FFF;
+			transition: all .15s linear;
+			&:hover,&:focus,&:active{
+				color: @yellow;
+			}
+		}
+	}
+}
+.header_search{
+	position: relative;
+}
+.header__search-area{
+	position: relative;
+	outline: none;
+	width: 127px;
+	-webkit-border-radius: 13px;
+	        border-radius: 13px;
+	margin-top: 20px;
+	text-align: center;
+	font-size: 12px;
+	transition: box-shadow .2s linear;
+	&:hover,&:focus,&:active{
+		-webkit-box-shadow: 1px 1px 20px @shadow-blue;
+		box-shadow: 1px 1px 20px @shadow-blue;
+	}
+	
+}
+.header__search-icon{
+	position: absolute;
+	font-size: 25px;
+	color: #FFF;
+	left: -30px;
+	top: 22px;
+	cursor: pointer;
+	transition: color .15s linear;
+	&:hover{
+		color: @yellow;
+	}
+}
+
+
+
+
+//SECOND ROW
+.header__information{
+	padding-top: 190px;
+	margin-bottom: 100px;
+}
+.header__information-text{
+	font-size: 18.75px;
+	font-weight: 400;
+	color: #FFF;
+	margin-bottom: 90px;
+}
+.header__image{
+	padding-top: 60px;
+}
