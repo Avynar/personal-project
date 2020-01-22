@@ -11,50 +11,105 @@
 </head>
 <body>
 	<header id="home">
+		<!-- Navigation icon -->
+		<button id="navigation__button" class="cmn-toggle-switch cmn-toggle-switch__htx">
+			<span>toggle menu</span>
+		</button>
+		<!-- //Navigation icon -->
+
+		<!-- Navigation small screen -->
+		<nav class="header__navigation-sms">
+			<ul class="header__navigation-sms-list">
+				<li class="header__navigation-sms-list-item">
+					<a href="#home">Home</a>
+				</li>
+				<li class="header__navigation-sms-list-item">
+					<a href="#description">About us</a>
+				</li>
+				<li class="header__navigation-sms-list-item">
+					<a href="#service">Service</a>
+				</li>
+				<li class="header__navigation-sms-list-item">
+					<a href="#doctors">Doctors</a>
+				</li>
+				<li class="header__navigation-sms-list-item">
+					<a href="#">Departments</a>
+				</li>
+				<li class="header__navigation-sms-list-item">
+					<a href="#">Blog</a>
+				</li>
+				<li class="header__navigation-sms-list-item">
+					<a href="#">Contact</a>
+				</li>
+			</ul>
+		</nav>
+
+
+		<!-- //Navigation small screen -->
+
 		<div class="container">
 			<!-- LOGO - NAVIGATION - SEARCH -->
-			<div class="row">
-				<div class="col-lg-2">
-					<div class="logo">
-						<a href="#"><img src="img/logo/Logo.png" alt="REVO"></a>
+			<div class="header__row-wrapper">
+				<div class="row">
+					<div class="col-lg-2">
+						<div class="logo">
+							<a href="#"><img src="img/logo/Logo.png" alt="REVO"></a>
+						</div>
 					</div>
-				</div>
-				<div class="col-lg-8">
-					<nav class="header__navigation">
-						<ul class="header__navigation-list">
-							<li><a href="#home">Home</a></li>
-							<li><a href="#description">About us</a></li>
-							<li><a href="#service">Service</a></li>
-							<li><a href="#doctors">Doctors</a></li>
-							<li><a href="#departaments">Departments</a></li>
-							<li><a href="#blog">Blog</a></li>
-							<li><a href="#contact">Contact</a></li>
-						</ul>
-					</nav>
-				</div>
-				<div class="col-lg-2">
-					<div class="header_search">
-						<label for="search-area"><i class="fa fa-search header__search-icon"></i></label>
-						<input id="search-area" class="header__search-area" type="text" placeholder="Search here">
+					<div class="col-lg-8">
+						<div class="row">
+							<div class="col-xl-6">
+								<nav class="header__navigation">
+									<ul class="header__navigation-list">
+										<li><a href="#home">Home</a></li>
+										<li><a href="#description">About us</a></li>
+										<li><a href="#service">Service</a></li>
+										<li><a href="#doctors">Doctors</a></li>
+									</ul>
+								</nav>
+							</div>
+							<div class="col-xl-6">
+								<nav class="header__navigation">
+									<ul class="header__navigation-list">
+										
+										<li><a href="#departaments">Departments</a></li>
+										<li><a href="#blog">Blog</a></li>
+										<li><a href="#contact">Contact</a></li>
+									</ul>
+								</nav>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-2">
+						<div class="header__search">
+							<div class="header__search-wrapper">
+								<label for="search-area"><i class="fas fa-search header__search-icon"></i></label>
+								<input id="search-area" class="header__search-area" type="text" placeholder="Search here">
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 			<!-- //LOGO - NAVIGATION - SEARCH -->
 			<!-- INFO PHOTO -->
-			<div class="row">
-				<div class="col-xl-6">
-					<div class="header__information">
-						<h2 class="heading heading--biger heading--light heading--lowercase">Make your own</h2>
-						<h2 class="heading heading--biger heading--semi heading--uppercase margin-bottom-15">Hospital website</h2>
-						<h2 class="heading heading--smaller heading-regular margin-bottom-45">With departaments and 2 Timetable styles</h2>
-						<p class="header__information-text margin-bottom-45">Pellentesque ligula odio, tempor sit amet fringilla vitae, pulvinarulla mcorper quamenatibus et magnis dis parturient montes nasce</p>
-						<div class="button button-sign">sign in</div>
-						<div class="button button-learn">learn more</div>
+			<div class="header__row-wrapper">
+				<div class="row">
+					<div class="col-lg-6">
+						<div class="header__information">
+							<h2 class="header__information-first-heading">Make your own</h2>
+							<h2 class="header__information-second-heading">Hospital website</h2>
+							<h2 class="header__information-third-heading">With departaments and 2 Timetable styles</h2>
+							<p class="header__information-text">Pellentesque ligula odio, tempor sit amet fringilla vitae, pulvinarulla mcorper quamenatibus et magnis dis parturient montes nasce</p>
+							<div class="header__button-wrapper">
+								<div class="button button-sign">sign in</div>
+								<div class="button button-learn">learn more</div>
+							</div>
+						</div>
 					</div>
-				</div>
-				<div class="d-none d-xl-block col-xl-6">
-					<div class="header__image">
-						<img src="img/content/big/header-doctor.png" alt="Doctor">
+					<div class="d-none d-lg-block col-lg-6">
+						<div class="header__image">
+							<img src="img/content/big/header-doctor.png" alt="Doctor">
+						</div>
 					</div>
 				</div>
 			</div>
@@ -63,104 +118,117 @@
 	</header>
 	<div id="description" class="description">
 		<div class="container">
-			<div class="row">
-				<div class="col-lg-6">
-					<div class="description__info">
-						<h2 class="heading heading--big heading--black margin-bottom-60">About us</h2>
-						<p class="description__info-text">Explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete ot the account of the system, and the master-builder of human being happiness. Expound the actual teachings of the great explorer of  the truth account of the system, and the master-builder of huma explorer of the truth</p> 
-						<div class="button button--gray-shadow button--bigger button-learn--modify">Learn more</div>
+			<div class="description__row-wrapper">
+				<div class="row">
+					<div class="col-lg-6">
+						<div class="description__info">
+							<h2 class="description__info-heading">About us</h2>
+							<p class="description__info-text">Explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete ot the account of the system, and the master-builder of human being happiness. Expound the actual teachings of the great explorer of  the truth account of the system, and the master-builder of huma explorer of the truth</p> 
+							<div class="button button--gray-shadow button--bigger button-learn--modify">Learn more</div>
+						</div>
 					</div>
-				</div>
-				<div class="d-none d-lg-block col-lg-6">
-					<div class="description__info-image">
-						<img src="img/content/big/desc-doctors.png" alt="Doctors">
+					<div class="d-none d-lg-block col-lg-5 offset-lg-1">
+						<div class="description__info-image">
+							<img src="img/content/big/desc-doctors.png" alt="Doctors">
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div id="quote" class="quote">
+	<div id="quote" class="quote blue-bg">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-8 offset-lg-2">
-					<div class="quote__text">
-						<h3 class="text-center heading heading--small">
+					<div class="quote__text-wrapper">
+						<h2 class="quote__text">
 						"When you are young and healthy, it never 
 						occurs to you that in a single second your
 						whole life could change".
 						</h2>
-						<p class="text-center quote__autor">- Anonim Nano -</p>
+						<p class="quote__autor">- Anonim Nano -</p>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 	<div id="service" class="service">
+		<div class="bus"></div>
 		<div class="container">
-			<div class="service__header text-center">
-				<h2 class="heading heading--small heading--black margin-bottom-30">Awesome theme for Medical, Hospital and Health Websites</h2>
+			<div class="service__header">
+				<h2 class="service__header-heading service__header-heading--big-screen d-none d-lg-block">Awesome theme for Medical, Hospital and Health Websites</h2>
+				<h2 class="service__header-heading service__header-heading--small-screen d-lg-none">Awesome theme for Health Websites</h2>
 				<p class="service__subheading margin-bottom-30">A perfect way to show tour hospital Services</p>
-				<div class="block--decoration">
+				<div class="block--decoration d-none d-lg-block">
 					<img src="img/content/sm/decoration.png" alt="decoration">
 				</div>
 			</div>
-			<div class="row">
-				<div class="col-lg-3">
-					<div class="service__spec text-center">
-						<div class="service__icon">
-							<img src="img/content/sm/cardio-icon.png" alt="cardio-icon">
+			<div class="service__row-wrapper">
+				<div class="row">
+					<div class="col-lg-3">
+						<div class="service__spec service__spec--red">
+							<div class="service__icon">
+								<img src="img/content/sm/cardio-icon.png" alt="cardio-icon">
+							</div>
+							<h3 class="service__spec-header">Cardio Monitoring</h3>
+							<p class="service__spec-information">
+								Pellentesque ligula odio, tempor sit amet fringilla vitae, pulvinar ullamcorper quamenatibus et magnis dis parturient montes nasce
+							</p>
 						</div>
-						<h3 class="service__spec-header">Cardio Monitoring</h3>
-						<p class="service__spec-information">
-							Pellentesque ligula odio, tempor sit amet fringilla vitae, pulvinar ullamcorper quamenatibus et magnis dis parturient montes nasce
-						</p>
 					</div>
-				</div>
-				<div class="col-lg-3">
-					<div class="service__spec text-center">
-						<div class="service__icon">
-							<img src="img/content/sm/medical-icon.png" alt="medical-icon">
+					<div class="col-lg-3">
+						<div class="service__spec service__spec--blue">
+							<div class="service__icon">
+								<img src="img/content/sm/medical-icon.png" alt="medical-icon">
+							</div>
+							<h3 class="service__spec-header">Medical Treatment</h3>
+							<p class="service__spec-information">
+								Pellentesque ligula odio, tempor sit amet fringilla vitae, pulvinar ullamcorper quamenatibus et magnis dis parturient montes nasce
+							</p>
 						</div>
-						<h3 class="service__spec-header">Medical Treatment</h3>
-						<p class="service__spec-information">
-							Pellentesque ligula odio, tempor sit amet fringilla vitae, pulvinar ullamcorper quamenatibus et magnis dis parturient montes nasce
-						</p>
 					</div>
-				</div>
-				<div class="col-lg-3">
-					<div class="service__spec text-center">
-						<div class="service__icon">
-							<img src="img/content/sm/emergincy-icon.png" alt="emergincy-icon">
+					<div class="col-lg-3">
+						<div class="service__spec service__spec--blue">
+							<div class="service__icon">
+								<img src="img/content/sm/emergincy-icon.png" alt="emergincy-icon">
+							</div>
+							<h3 class="service__spec-header">Emergincy Help</h3>
+							<p class="service__spec-information">
+								Pellentesque ligula odio, tempor sit amet fringilla vitae, pulvinar ullamcorper quamenatibus et magnis dis parturient montes nasce
+							</p>
 						</div>
-						<h3 class="service__spec-header">Emergincy Help</h3>
-						<p class="service__spec-information">
-							Pellentesque ligula odio, tempor sit amet fringilla vitae, pulvinar ullamcorper quamenatibus et magnis dis parturient montes nasce
-						</p>
 					</div>
-				</div>
-				<div class="col-lg-3">
-					<div class="service__spec text-center">
-						<div class="service__icon">
-							<img src="img/content/sm/first-aid-icon.png" alt="first-aid-icon">
+					<div class="col-lg-3">
+						<div class="service__spec service__spec--red">
+							<div class="service__icon">
+								<img src="img/content/sm/first-aid-icon.png" alt="first-aid-icon">
+							</div>
+							<h3 class="service__spec-header">First aid</h3>
+							<p class="service__spec-information">
+								Pellentesque ligula odio, tempor sit amet fringilla vitae, pulvinar ullamcorper quamenatibus et magnis dis parturient montes nasce
+							</p>
 						</div>
-						<h3 class="service__spec-header">First aid</h3>
-						<p class="service__spec-information">
-							Pellentesque ligula odio, tempor sit amet fringilla vitae, pulvinar ullamcorper quamenatibus et magnis dis parturient montes nasce
-						</p>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="ad-sign">
+	<div class="ad-sign blue-bg">
 		<div class="container">
-			<div class="row">
-				<div class="col-xl-6 offset-xl-6">
-					<div class="ad-sign__description">
-						<h3 class="ad-sign__description-heading">When you are young and healthy, it never occurs to you that in a single second your</h3>
-						<div class="ad-sign__button-wrapper">
-							<div class="button button-sign">sign in</div>
-							<div class="button button-learn">learn more</div>
+			<div class="ad-sign__row-wrapper">
+				<div class="row">
+					<div class="col-xl-5 offset-xl-1">
+						<div class="ad-sign__img-wrapper">
+							<img src="img/content/big/MacBook-Pro-mockup.png" alt="">
+						</div>
+					</div>
+					<div class="col-xl-6">
+						<div class="ad-sign__description">
+							<h3 class="ad-sign__description-heading">When you are young and healthy, it never occurs to you that in a single second your</h3>
+							<div class="ad-sign__button-wrapper">
+								<div class="button button-sign">sign in</div>
+								<div class="button button-learn">learn more</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -169,52 +237,69 @@
 	</div>
 	<div id="doctors" class="doctor-panel">
 		<div class="container">
-			<h2 class="heading heading--black">Our Doctor Panel</h2>
+			<h2 class="doctors-panel__heading">Our Doctor Panel</h2>
 			<div class="doctor-panel__doctors">
 				<div class="doctor-panel__doctor-description">
 					<img src="img/content/sm/doctor-smith.png" alt="">
-					<h3 class="heading heading--smaller heading--uppercase"><a href="#">SAMUAL SMITH</a></h3>
+					<h3 class="doctor-panel__doctor-name"><a href="#">SAMUAL SMITH</a></h3>
 					<p class="doctor-panel__doctor-spec">Medicine</p>
 				</div>
 				<div class="doctor-panel__doctor-description">
 					<img src="img/content/sm/doctor-ira.png" alt="">
-					<h3 class="heading heading--smaller heading--uppercase"><a href="#">ELIZABATH IRA</a></h3>
+					<h3 class="doctor-panel__doctor-name"><a href="#">ELIZABATH IRA</a></h3>
 					<p class="doctor-panel__doctor-spec">Cardilogy</p>
 				</div>
 				<div class="doctor-panel__doctor-description">
 					<img src="img/content/sm/doctor-goe.png" alt="">
-					<h3 class="heading heading--smaller heading--uppercase"><a href="#">SAMUAL GOE</a></h3>
+					<h3 class="doctor-panel__doctor-name"><a href="#">SAMUAL GOE</a></h3>
 					<p class="doctor-panel__doctor-spec">Medicine</p>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="package-service">
+	<div class="package-service blue-bg">
 		<div class="container">
 			<div class="package-servise__heading-wrapper">
 				<h2 class="package-service__heading">Package Service</h2>
-				<p class="package-service__heading-slogan">A perfect way to show your hospital services</p>
+				<p class="package-service__heading-slogan d-none d-md-block">A perfect way to show your hospital services</p>
 			</div>
-			<div class="row">
-				<div class="col-lg-4">
-					<div class="package-servise__spec package-servise__spec--regular">
-						<h3 class="package-servise__spec-heading">Regular Case</h3>
-						<p class="package-servise__spec-description">Pellentesque ligula odio, tempor sit amet fringilla vitae, pulvinar ullamcorper quamenatibus et magnis dis parturient montes nasce</p>
-						<div class="package-servise__spec-button">Read more</div>
+			<div class="package-service__row-wrapper">
+				<div class="row">
+					<div class="col-lg-4">
+						<div class="package-servise__spec">
+							<div class="spec-icon">
+								<div class="fa-rotate-wrapper">
+									<i class="fa fa-phone"></i>
+								</div>
+							</div>
+							<h3 class="package-servise__spec-heading">Regular Case</h3>
+							<p class="package-servise__spec-description">Pellentesque ligula odio, tempor sit amet fringilla vitae, pulvinar ullamcorper quamenatibus et magnis dis parturient montes nasce</p>
+							<div class="package-servise__spec-button">Read more</div>
+						</div>
 					</div>
-				</div>
-				<div class="col-lg-4">
-					<div class="package-servise__spec package-servise__spec--serious">
-						<h3 class="package-servise__spec-heading">Serious Case</h3>
-						<p class="package-servise__spec-description">Pellentesque ligula odio, tempor sit amet fringilla vitae, pulvinar ullamcorper quamenatibus et magnis dis parturient montes nasce</p>
-						<div class="package-servise__spec-button">Read more</div>
+					<div class="col-lg-4">
+						<div class="package-servise__spec">
+							<div class="spec-icon">
+								<div class="fa-rotate-wrapper">
+									<i class="fa fa-calendar"></i>
+								</div>
+							</div>
+							<h3 class="package-servise__spec-heading">Serious Case</h3>
+							<p class="package-servise__spec-description">Pellentesque ligula odio, tempor sit amet fringilla vitae, pulvinar ullamcorper quamenatibus et magnis dis parturient montes nasce</p>
+							<div class="package-servise__spec-button">Read more</div>
+						</div>
 					</div>
-				</div>
-				<div class="col-lg-4">
-					<div class="package-servise__spec package-servise__spec--emergency">
-						<h3 class="package-servise__spec-heading">Emergency Case</h3>
-						<p class="package-servise__spec-description">Pellentesque ligula odio, tempor sit amet fringilla vitae, pulvinar ullamcorper quamenatibus et magnis dis parturient montes nasce</p>
-						<div class="package-servise__spec-button">Read more</div>
+					<div class="col-lg-4">
+						<div class="package-servise__spec package-servise__spec--mb0">
+							<div class="spec-icon">
+								<div class="fa-rotate-wrapper">
+									<i class="fa fa-comments"></i>
+								</div>
+							</div>
+							<h3 class="package-servise__spec-heading">Emergency Case</h3>
+							<p class="package-servise__spec-description">Pellentesque ligula odio, tempor sit amet fringilla vitae, pulvinar ullamcorper quamenatibus et magnis dis parturient montes nasce</p>
+							<div class="package-servise__spec-button">Read more</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -228,28 +313,43 @@
 					<div class="latest-posts__post-img">
 						<img src="img/content/sm/latest-post-img.png" alt="">
 					</div>
-					<h4 class="latest-posts__post-heading">We believe in bringing the most modern </h4>
-					<p class="latest-posts__post-description">The highest levels of ethics and standards. We are committed to continuing medical education, through our fellowship and DNB programs.</p>
-					<p class="latest-posts__post-description latest-posts__post-description--smaller-margin">We organize atleast one conference a month and support research foundation for continued advancement</p>
-					<div class="block--g">September 8, 2014 0 comments</div>
+					<div class="latest-posts__post-filling">
+						<h4 class="latest-posts__post-heading">We believe in bringing the most modern techniques and delivering extraordinary care to ailing population with</h4>
+						<p class="latest-posts__post-description">The highest levels of ethics and standards. We are committed to continuing medical education, through our fellowship and DNB programs.</p>
+						<p class="latest-posts__post-description latest-posts__post-description--smaller-margin">We organize atleast one conference a month and support research foundation for continued advancement</p>
+						<div class="latest-posts__post-addinfo">
+							<div class="date"><a href="#"><i class="far fa-clock"></i> September 8, 2014</a></div>
+							<div class="comments"><a href="#"><i class="far fa-comment"></i> 0 comments</a></div>
+						</div>
+					</div>
 				</div>
 				<div class="latest-posts__post">
 					<div class="latest-posts__post-img">
 						<img src="img/content/sm/latest-post-img.png" alt="">
 					</div>
-					<h4 class="latest-posts__post-heading">We believe in bringing the most modern </h4>
-					<p class="latest-posts__post-description">The highest levels of ethics and standards. We are committed to continuing medical education, through our fellowship and DNB programs.</p>
-					<p class="latest-posts__post-description latest-posts__post-description--smaller-margin">We organize atleast one conference a month and support research foundation for continued advancement</p>
-					<div class="block--g">September 8, 2014 0 comments</div>
+					<div class="latest-posts__post-filling">
+						<h4 class="latest-posts__post-heading">We believe in bringing the most modern techniques and delivering extraordinary care to ailing population with</h4>
+						<p class="latest-posts__post-description">The highest levels of ethics and standards. We are committed to continuing medical education, through our fellowship and DNB programs.</p>
+						<p class="latest-posts__post-description latest-posts__post-description--smaller-margin">We organize atleast one conference a month and support research foundation for continued advancement</p>
+						<div class="latest-posts__post-addinfo">
+							<div class="date"><a href="#"><i class="far fa-clock"></i> September 8, 2014</a></div>
+							<div class="comments"><a href="#"><i class="far fa-comment"></i> 0 comments</a></div>
+						</div>
+					</div>
 				</div>
 				<div class="latest-posts__post">
 					<div class="latest-posts__post-img">
 						<img src="img/content/sm/latest-post-img.png" alt="">
 					</div>
-					<h4 class="latest-posts__post-heading">We believe in bringing the most modern </h4>
-					<p class="latest-posts__post-description">The highest levels of ethics and standards. We are committed to continuing medical education, through our fellowship and DNB programs.</p>
-					<p class="latest-posts__post-description latest-posts__post-description--smaller-margin">We organize atleast one conference a month and support research foundation for continued advancement</p>
-					<div class="block--g">September 8, 2014 0 comments</div>
+					<div class="latest-posts__post-filling">
+						<h4 class="latest-posts__post-heading">We believe in bringing the most modern techniques and delivering extraordinary care to ailing population with</h4>
+						<p class="latest-posts__post-description">The highest levels of ethics and standards. We are committed to continuing medical education, through our fellowship and DNB programs.</p>
+						<p class="latest-posts__post-description latest-posts__post-description--smaller-margin">We organize atleast one conference a month and support research foundation for continued advancement</p>
+						<div class="latest-posts__post-addinfo">
+							<div class="date"><a href="#"><i class="far fa-clock"></i> September 8, 2014</a></div>
+							<div class="comments"><a href="#"><i class="far fa-comment"></i> 0 comments</a></div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -296,5 +396,13 @@
 			</div>
 		</div>
 	</footer>
+
+	<!-- vendors scripts -->
+	<script src="libs/jquery/jquery-3.3.1.min.js"></script>
+	<script src="libs/pagescroll2id/jquery.malihu.PageScroll2id.js"></script>
+
+	<!-- main scripts -->
+	<script src="js/navigation.js"></script>
+	<script src="js/main.js"></script>
 </body>
 </html>

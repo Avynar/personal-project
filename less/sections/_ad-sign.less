@@ -1,40 +1,89 @@
 .ad-sign{
-	background: url(../img/bg/content-bg.png);
+	background: url(../img/bg/ad-doctors.png);
 	background-position: center;
 	background-repeat: no-repeat;
 	-webkit-background-size: cover;
 	     -o-background-size: cover;
 	        background-size: cover;
-	padding-top: 100px;
-	padding-bottom: 120px;
-	@media(min-width: 1600px){
-		padding-top: 240px;
-		padding-bottom: 280px;
+	padding-top: 45px;
+	padding-bottom: 55px;
+	@media (min-width: 540px){
+		padding-top: 50px;
+		padding-bottom: 60px;
+	}
+	@media (min-width: 768px){
+		padding-top: 70px;
+		padding-bottom: 80px;
+	}
+	@media (min-width: 992px){
+		padding-top: 80px;
+		padding-bottom: 90px;
+	}
+	@media (min-width: 1200px){
+		padding-top: 90px;
+		padding-bottom: 105px;
+	}
+	@media (min-width: 1600px){
+		padding-top: 100px;
+		padding-bottom: 120px;
 	}
 
 }
 .ad-sign__description{
 	position: relative;
-	&::before{
-		content: url(../img/content/big/MacBook-Pro-mockup.png);
-		position: absolute;
-		top: -110px;
-		left:-715px;
-		display: none;
-		@media(min-width: 1600px){
-			display: block;
-		}
+	z-index: 2;
+	padding-top: 40px;
+	@media (min-width: 540px){
+		padding-top: 50px;
+	}
+	@media (min-width: 768px){
+		padding-top: 70px;
+	}
+	@media (min-width: 992px){
+		padding-top: 80px;
+	}
+	@media (min-width: 1200px){
+		padding-top: 90px;
+	}
+	@media(min-width: 1600px){
+		padding-top: 110px;	
+	}
+}
+.ad-sign__img-wrapper{
+	text-align: center;
+	z-index: 2;
+	position: relative;
+	
+	@media(min-width: 1600px){
+		left: 100px;
 	}
 }
 .ad-sign__description-heading{
+	text-align: center;
 	padding: 0 75px;
-	font-size: 28.4px;
+	font-size: 22px;
 	color: #FFF;
-	margin-bottom: 50px;
-	@media(min-width: 1600px){
-		margin-bottom: 80px;
+	margin-bottom: 20px;
+	@media (min-width: 992px){
+		font-size: 24px;
 	}
+	@media (min-width: 1200px){
+		font-size: 26px;
+  	}
+	@media (min-width: 1600px){
+		font-size: 28.4px;
+		margin-bottom: 80px;
+		text-align: left;
+  	}
 }
 .ad-sign__button-wrapper{
-	padding-left:105px;
+
+	@media (max-width: 1600px){
+		display: flex;
+		-webkit-justify-content: space-around;
+		        justify-content: space-around;
+	}
+	@media (min-width: 1600px){
+			padding-left:105px;
+	}
 }

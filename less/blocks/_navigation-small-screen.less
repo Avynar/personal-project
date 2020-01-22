@@ -1,0 +1,39 @@
+.header__navigation-sms {
+	display: none;
+	&--open{
+		display: block;
+		position: fixed;
+		left: 0;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		z-index: 99;
+		background-color: rgba(0, 80, 213,.95);
+	}
+}
+.header__navigation-sms-list {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	   -moz-transform: translate(-50%,-50%);
+	    -ms-transform: translate(-50%,-50%);
+	     -o-transform: translate(-50%,-50%);
+	        transform: translate(-50%,-50%);
+	list-style-type: none;
+	text-align: center;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 3;
+	letter-spacing: 1px;
+}
+.header__navigation-sms-list-item{
+	a{
+		color: #FFF;
+		transition:all .2s linear;
+		&:hover{
+			color: @yellow;
+			text-decoration: none;
+		}
+	}
+}

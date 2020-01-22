@@ -1,14 +1,9 @@
 .button{
+	line-height: 1;
 	display: inline-block;
 	cursor: pointer;
 	text-align: center;
-	width: 165px;
-	-webkit-border-radius: 23px;
-	        border-radius: 23px;
-	font-size: 18.75px;
-	line-height: 1;
-	padding-top: 12px;
-	padding-bottom: 12px;
+	
 	text-transform: capitalize;
 	-webkit-box-shadow: 1px 1px 20px @shadow-blue;
 		box-shadow: 1px 1px 20px @shadow-blue;
@@ -16,20 +11,58 @@
 	&:hover,&:focus,&:active{
 		outline: none;
 	}
+
+	width: 120px;
+	-webkit-border-radius: 18px;
+	border-radius: 18px;
+	font-size: 14px;
+	padding-top: 9px;
+	padding-bottom: 9px;
+	
+	@media (min-width: 992px){
+		width: 145px;
+		-webkit-border-radius: 19px;
+		border-radius: 19px;
+		font-size: 16px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	@media (min-width: 1200px){
+		width: 165px;
+		-webkit-border-radius: 23px;
+		border-radius: 23px;
+		font-size: 18.75px;
+		padding-top: 12px;
+		padding-bottom: 12px;
+	}
 }
 .button--bigger{
-	width: 225px;
-	padding-top: 22px;
-	padding-bottom: 20px;
+	width: 170px;
+	padding-top: 16px;
+	padding-bottom: 14px;
 	-webkit-border-radius: 30px;
-	        border-radius: 30px;
+	border-radius: 30px;
+	@media (min-width: 992px){
+		width: 200px;
+		padding-top: 20px;
+		padding-bottom: 18px;
+		-webkit-border-radius: 30px;
+		border-radius: 30px;
+	}
+	@media (min-width: 1200px){
+		width: 225px;
+		padding-top: 22px;
+		padding-bottom: 20px;
+		-webkit-border-radius: 30px;
+		border-radius: 30px;
+	}
+	
 }
 .button--gray-shadow{
 	-webkit-box-shadow: 1px 1px 20px #9c9c9c;
 		box-shadow: 1px 1px 20px #9c9c9c;
 }
 .button-sign{
-	margin-right: 55px;
 	background-color: #FFF;
 	color: #1181ff;
 	&:hover,&:focus{
@@ -40,8 +73,11 @@
 		background-color: #1181ff;
 		color: @yellow;
 	}
+	@media (min-width: 1200px){
+		margin-right: 60px;
+	}
 }
-.button-learn{
+.button-learn{	
 	background-color: #16c5ff;
 	color: #fff;
 	&:hover,&:focus{

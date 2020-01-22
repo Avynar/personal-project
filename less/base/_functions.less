@@ -1,0 +1,99 @@
+//серая анимашка
+@-webkit-keyframes pulse-gray {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(144,144,144, 0.4);
+  }
+  70% {
+      -webkit-box-shadow: 0 0 0 15px rgba(144,144,144, 0);
+  }
+  100% {
+      -webkit-box-shadow: 0 0 0 0 rgba(144,144,144, 0);
+  }
+}
+@keyframes pulse-gray {
+  0% {
+    -moz-box-shadow: 0 0 0 0 rgba(144,144,144, 0.4);
+    box-shadow: 0 0 0 0 rgba(144,144,144, 0.4);
+  }
+  70% {
+      -moz-box-shadow: 0 0 0 15px rgba(144,144,144, 0);
+      box-shadow: 0 0 0 15px rgba(144,144,144, 0);
+  }
+  100% {
+      -moz-box-shadow: 0 0 0 0 rgba(144,144,144, 0);
+      box-shadow: 0 0 0 0 rgba(144,144,144, 0);
+  }
+}
+
+//синяя анимашка
+@-webkit-keyframes pulse-blue {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(0,0,255, 1);
+  }
+  99% {
+      -webkit-box-shadow: 0 0 0 15px rgba(0,0,255, 0);
+  }
+  100% {
+      -webkit-box-shadow: 0 0 0 0 rgba(0,0,255, 0);
+  }
+}
+@keyframes pulse-blue {
+  0% {
+    -moz-box-shadow: 0 0 0 0 rgba(0,0,255, 1);
+    box-shadow: 0 0 0 0 rgba(0,0,255, 1);
+  }
+  99% {
+      -moz-box-shadow: 0 0 0 15px rgba(0,0,255, 0);
+      box-shadow: 0 0 0 15px rgba(0,0,255, 0);
+  }
+  100% {
+      -moz-box-shadow: 0 0 0 0 rgba(0,0,255, 0);
+      box-shadow: 0 0 0 0 rgba(0,0,255, 0);
+  }
+}
+//Красная анимашка
+@-webkit-keyframes pulse-red {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(255,0,0, 1);
+  }
+  99% {
+      -webkit-box-shadow: 0 0 0 15px rgba(255,0,0, 0);
+  }
+  100% {
+      -webkit-box-shadow: 0 0 0 0 rgba(255,0,0, 0);
+  }
+}
+@keyframes pulse-red {
+  0% {
+    -moz-box-shadow: 0 0 0 0 rgba(255,0,0, 1);
+    box-shadow: 0 0 0 0 rgba(255,0,0, 1);
+  }
+  99% {
+      -moz-box-shadow: 0 0 0 15px rgba(255,0,0, 0);
+      box-shadow: 0 0 0 15px rgba(255,0,0, 0);
+  }
+  100% {
+      -moz-box-shadow: 0 0 0 0 rgba(255,0,0, 0);
+      box-shadow: 0 0 0 0 rgba(255,0,0, 0);
+  }
+}
+
+@keyframes bus-dr{ 
+  99.99%{ 
+   transform:translate(-2600px); 
+  } 
+  100%{ 
+   transform:translate(-2600px) rotateY(-180deg) ; 
+  } 
+} 
+@keyframes bus-dr-dr{ 
+  0%{ 
+   transform:translate(-2600px) rotateY(-180deg); 
+  } 
+  99.99%{ 
+   transform:translate(0)rotateY(-180deg); 
+  } 
+  100%{ 
+   transform:translate(0); 
+  } 
+}

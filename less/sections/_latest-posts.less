@@ -1,14 +1,40 @@
 .latest-posts{
 	background-color: #F9F5F5;
-	padding-top: 120px;
-	padding-bottom: 60px;
+	padding-top: 60px;
+	padding-bottom: 40px;
+
+	@media (min-width: 768px){
+		padding-top: 80px;
+		padding-bottom: 50px;
+	}
+	@media (min-width: 992px){
+		padding-top: 90px;
+		padding-bottom: 60px;
+	}
+	@media (min-width: 1200px){
+		padding-top: 100px;
+	}
+	@media (min-width: 1600px){
+		padding-top: 120px;
+	}
 }
 .latest-posts__heading {
 	text-transform: capitalize;
-	font-size: 62.5px;
+	text-align: center;
+	color: #333;
+	font-size: 48px;
 	font-weight: 500;
 	line-height: 1;
-	margin-bottom: 95px;
+	margin-bottom: 55px;
+	@media (min-width: 768px){
+		font-size: 54px;
+		margin-bottom: 75px;
+	}
+	@media (min-width: 1200px){
+		text-align: left;
+		font-size: 62.5px;
+		margin-bottom: 95px;
+	}
 }
 .latest-posts__posts-wrapper {
 	@media(min-width: 1200px){
@@ -26,32 +52,63 @@
 			margin-bottom: 0;
 		}
 	}
-	width: 455px;
+	width: 100%;
 	background-color: #fff;
 	padding: 11px 11px 28px;
 	-webkit-box-shadow: 1px 1px 20px #bfbebe;
 	        box-shadow: 1px 1px 20px #bfbebe;
 	cursor: pointer;
 	&:hover,&:focus{
-		animation: pulse 1.5s infinite;
+		animation: pulse-gray 1.5s infinite;
 	}
-	
+	@media (min-width: 568px){
+		width: 455px;
+	}
 }
 .latest-posts__post-img {
 	margin-bottom: 32px;
 }
+.latest-posts__post-filling{
+	padding-left: 15px;
+	@media (min-width: 1200px){
+		padding-left: 25px;
+	}
+}
 .latest-posts__post-heading {
-	font-size: 17px;
-	font-weight: 500;
+	font-size: 16px;
+	font-weight: 600;
 	line-height: 1;
 	margin-bottom: 26px;
+	@media (min-width: 992px){
+		font-size: 17.3px;
+	}
 }
 .latest-posts__post-description {
-	font-size: 12.85px;
+	font-size: 11.5px;
 	font-weight: 500;
 	margin-bottom: 32px;
 	color: #525252;
+	@media (min-width: 992px){
+		font-size: 12.85px;
+	}
 }
 .latest-posts__post-description--smaller-margin{
 	margin-bottom: 21px;
+}
+.latest-posts__post-addinfo{
+	
+	font-size: 12.85px;
+	.date{
+		display: inline-block;
+		margin-right: 65px;
+	}
+	.comments{
+		display: inline-block;
+	}
+	a{
+		color: #b2b2b2;
+		&:hover{
+			color: #b2b2b2;
+		}
+	}
 }

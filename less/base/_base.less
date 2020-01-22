@@ -1,3 +1,7 @@
+i {
+font-family: fontawesome !important;
+}
+
 body, html{
 	font-size: 10px;
 	padding: 0;
@@ -5,27 +9,18 @@ body, html{
 	font-family: 'Poppins';
 	min-width: 320px;
 }
-p{
-	font-size: 14px;
-	color: #000;
-	line-height: 1.57;
-	@media(min-width: 768px){
-		font-size: 16px;
-		line-height: 1.75;
+
+.blue-bg{
+	position: relative;
+	
+	&:after{
+		content: "";
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background-color: rgba(0,80,213,0.95);
+		z-index: 1;
 	}
-}
-.margin-bottom-15{
-	margin-bottom: 15px;
-}
-.margin-bottom-30{
-	margin-bottom: 30px;
-}
-.margin-bottom-45{
-	margin-bottom: 45px;
-}
-.margin-bottom-60{
-	margin-bottom: 60px;
-}
-.margin-bottom-90{
-	margin-bottom: 90px;
 }

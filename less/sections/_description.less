@@ -1,36 +1,103 @@
 .description{
-	padding-top: 125px;
-	padding-bottom: 175px;
+	padding-top: 80px;
+	padding-bottom: 100px;
+	@media (min-width: 992px){
+		padding-top: 100px;
+		padding-bottom: 130px;
+	}
+	@media (min-width: 1200px){
+		padding-top: 115px;
+		padding-bottom: 150px;
+	}
+	@media (min-width: 1600px){
+		padding-top: 125px;
+		padding-bottom: 175px;
+	}
 }
-.description__info{
-	h2{
-		position: relative;
-		&:before{
-			display: block;
+
+.description__info-heading{
+	position: relative;
+	font-size: 48px;
+	font-weight: 500;
+	line-height: 1;
+	color: #282828;
+	margin-bottom: 60px;
+	&:before{
+		display: block;
 			content: " ";
 			position: absolute;
 			height: 3px; 
+			width: calc(100%/4);
+			background-color: #00BED4;
+			top: 65px;
+			left: 1px;
+		@media (min-width: 568px){
 			width: 124px;
 			background-color: #00BED4;
-			top: 86px;
-			left: 1px;
 		}
-		&:after{
-			display: block;
-			content: " ";
-			position: absolute;
-			height: 3px;
+		@media (min-width: 992px){
+			top: 70px;
+		}
+		@media (min-width: 1200px){
+			top: 86px;
+	  	}
+	}
+	&:after{
+		display: block;
+		content: " ";
+		position: absolute;
+		height: 3px;
+		width: calc(100%/4*3);
+		background-color: #dedede;
+		top: 65px;
+		left:calc(100%/4);
+		@media (min-width: 535px){
 			width: 381px;
 			background-color: #dedede;
-			top: 86px;
 			left:125px;
 		}
+		@media (min-width: 992px){
+			top: 70px;
+		}
+		@media (min-width: 1200px){
+			top: 86px;
+	  	}
+
 	}
+	@media (min-width: 992px){
+		font-size: 52px;
+	}
+	@media (min-width: 1200px){
+		font-size: 60px;
+  	}
+	@media (min-width: 1600px){
+		font-size: 66.67px;
+  	}
 }
+
 .description__info-text{
-	font-size: 23px;
+	font-size: 16px;
 	line-height: 2;
+	margin-bottom: 40px;
+	@media (min-width: 992px){
+		font-size: 18px;
+		margin-bottom: 60px;
+	}
+	@media (min-width: 1200px){
+		font-size: 20px;
+		margin-bottom: 70px;
+  	}
+	@media (min-width: 1600px){
+		font-size: 23px;
+		margin-bottom: 85px;
+  	}
 }
 .description__info-image{
-	padding-left: 95px;
+	@media(min-width: 992px){
+		position: relative;
+		top: 50px;
+	}
+	@media(min-width: 1600px){
+		top: 0;
+	}
 }

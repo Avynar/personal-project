@@ -1,18 +1,49 @@
 .doctor-panel{
-	padding-top: 79px;
-	padding-bottom: 125px;
-	h2{
-		margin-bottom: 122px;
+	padding-top: 50px;
+	padding-bottom: 80px;
+	@media (min-width: 540px){
+		padding-top: 80px;
+		padding-bottom: 110px;
+	}
+	@media (min-width: 768px){
+		padding-top: 100px;
+		padding-bottom: 135px;
+	}
+	@media (min-width: 992px){
+		padding-top: 110px;
+		padding-bottom: 150px;
 	}
 	@media (min-width: 1200px){
+		padding-top: 120px;
+		padding-bottom: 165px;
+	}
+	@media (min-width: 1600px){
 		padding-top: 129px;
 		padding-bottom: 175px;
 	}
 }
+.doctors-panel__heading{
+	font-size: 48px;
+	text-align: center;
+	font-weight: 600;
+	color: #303030;
+	line-height: 1;
+	margin-bottom: 70px;
+	@media (min-width: 768px){
+		margin-bottom: 90px;
+		font-size: 54px;
+	}
+
+	@media (min-width: 1200px){
+		margin-bottom: 122px;
+		font-size: 62.5px;	
+		text-align: left;
+	}
+
+}
 
 .doctor-panel__doctors{
-
-	@media(min-width: 1200px){
+	@media(min-width: 992px){
 		display: flex;
 		-webkit-justify-content: space-between;
 		justify-content: space-between;
@@ -22,13 +53,13 @@
 	background-color: #0050D5;
 	text-align: center;
 	padding-bottom: 13px;
-	width: 441px;
+	width: 100%;	
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 20px;
-	border-top:1px solid black;
+	border-top:1px dotted #fff;
 	
-	@media (min-width: 1200px){
+	@media (min-width: 992px){
 		margin: 0;
 		margin-right: 10px;
 		border: none;
@@ -43,17 +74,12 @@
 	img{
 		margin-bottom: 23px;
 	}
-	h3{
-		a{
-			text-decoration: none;
-			color: #FFF;
-			transition: color .15s linear;
-			&:hover,&:focus,&:active{
-				color: @yellow;
-			}
-		}
+	
+	@media (min-width: 472px){
+		width: 441px;
 	}
 }
+
 
 .doctor-panel__doctor-spec{
 	font-size: 31px;
@@ -61,4 +87,18 @@
 	color: #FFF;
 	margin: 0;
 	line-height: 1;
+}
+.doctor-panel__doctor-name{
+	font-size: 30.83px;
+	font-weight: 500;
+	line-height: 1;
+	text-transform: uppercase;
+	a{
+		color: #FFF;
+		transition: color .15s linear;
+		&:hover,&:focus,&:active{
+			text-decoration: none;
+			color: @yellow;
+		}
+	}
 }
