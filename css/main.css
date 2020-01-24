@@ -393,6 +393,11 @@ template {
     transform: translate(0);
   }
 }
+@keyframes scale {
+  100% {
+    transform: scale(1.35) rotate(-45deg);
+  }
+}
 /*
  * Box-sizing-model
  */
@@ -1779,6 +1784,11 @@ header {
   .package-servise__spec {
     padding: 165px 80px 75px;
   }
+}
+.package-servise__spec:hover .fa-rotate-wrapper {
+  color: #f6ff00;
+  animation: scale 2s;
+  animation-fill-mode: forwards;
 }
 .package-servise__spec-heading {
   margin: 0;
