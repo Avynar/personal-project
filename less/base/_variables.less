@@ -1,7 +1,16 @@
 @shadow-blue : #0017f4;
 @yellow : #f6ff00;
 
-
+.contacts__contact{
+::-webkit-input-placeholder {color:#FFF; opacity:1;}/* webkit */
+::-moz-placeholder          {color:#FFF; opacity:1;}/* Firefox 19+ */
+:-moz-placeholder           {color:#FFF; opacity:1;}/* Firefox 18- */
+:-ms-input-placeholder      {color:#FFF; opacity:1;}/* IE */
+:focus::-webkit-input-placeholder {opacity:.3;}/* webkit */
+:focus::-moz-placeholder          {opacity:.3;}/* Firefox 19+ */
+:focus:-moz-placeholder           {opacity:.3;}/* Firefox 18- */
+:focus:-ms-input-placeholder      {opacity:.3;}/* IE */
+}
 @media (min-width: 540px){
   }
 @media (min-width: 768px){

@@ -1,6 +1,7 @@
 @import "../fonts/OpenSans/stylesheet.css";
 @import "../fonts/Poppins/stylesheet.css";
 @import "../fonts/font-awesome/css/fontawesome.min.css";
+@import "../fonts/montserrat/stylesheet.css";
 html {
   line-height: 1.15;
   /* 1 */
@@ -299,6 +300,44 @@ template {
 [hidden] {
   display: none;
 }
+.contacts__contact {
+  /* webkit */
+  /* Firefox 19+ */
+  /* Firefox 18- */
+  /* IE */
+  /* webkit */
+  /* Firefox 19+ */
+  /* Firefox 18- */
+  /* IE */
+}
+.contacts__contact ::-webkit-input-placeholder {
+  color: #FFF;
+  opacity: 1;
+}
+.contacts__contact ::-moz-placeholder {
+  color: #FFF;
+  opacity: 1;
+}
+.contacts__contact :-moz-placeholder {
+  color: #FFF;
+  opacity: 1;
+}
+.contacts__contact :-ms-input-placeholder {
+  color: #FFF;
+  opacity: 1;
+}
+.contacts__contact :focus::-webkit-input-placeholder {
+  opacity: .3;
+}
+.contacts__contact :focus::-moz-placeholder {
+  opacity: .3;
+}
+.contacts__contact :focus:-moz-placeholder {
+  opacity: .3;
+}
+.contacts__contact :focus:-ms-input-placeholder {
+  opacity: .3;
+}
 @-webkit-keyframes pulse-gray {
   0% {
     -webkit-box-shadow: 0 0 0 0 rgba(144, 144, 144, 0.4);
@@ -395,7 +434,7 @@ template {
 }
 @keyframes scale {
   100% {
-    transform: scale(1.35) rotate(-45deg);
+    transform: scale(1.15) rotate(-45deg);
   }
 }
 /*
@@ -1787,7 +1826,7 @@ header {
 }
 .package-servise__spec:hover .fa-rotate-wrapper {
   color: #f6ff00;
-  animation: scale 2s;
+  animation: scale 1s;
   animation-fill-mode: forwards;
 }
 .package-servise__spec-heading {
@@ -2043,4 +2082,167 @@ header {
 }
 .latest-posts__post-addinfo a:hover {
   color: #b2b2b2;
+}
+.contacts {
+  padding-top: 110px;
+  padding-bottom: 110px;
+}
+.contacts__map iframe {
+  width: 100%;
+  margin-bottom: 10px;
+}
+@media (min-width: 992px) {
+  .contacts__map iframe {
+    width: 550px;
+    height: 657px;
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .contacts__map iframe {
+    width: 660px;
+  }
+}
+@media (min-width: 1600px) {
+  .contacts__map iframe {
+    width: 886px;
+    height: 641px;
+  }
+}
+.contacts__contact {
+  background-color: #0050D5;
+  padding: 49px 40px 59px;
+  font-family: "Montserrat";
+  font-weight: 500;
+  line-height: 1;
+  color: #FFF;
+  /* webkit */
+  /* Firefox 19+ */
+  /* Firefox 18- */
+  /* IE */
+  /* webkit */
+  /* Firefox 19+ */
+  /* Firefox 18- */
+  /* IE */
+}
+.contacts__contact input,
+.contacts__contact textarea {
+  outline-style: none;
+  background-color: #3373DD;
+  border: 0px;
+  width: 100%;
+  font-size: 19.37px;
+  padding-left: 16px;
+  padding-right: 16px;
+  color: #FFF;
+}
+.contacts__contact input {
+  margin-bottom: 13px;
+  height: 36px;
+}
+.contacts__contact textarea {
+  margin-bottom: 64px;
+  height: 225px;
+  resize: none;
+}
+.contacts__contact ::-webkit-input-placeholder {
+  color: #FFF;
+  opacity: 1;
+}
+.contacts__contact ::-moz-placeholder {
+  color: #FFF;
+  opacity: 1;
+}
+.contacts__contact :-moz-placeholder {
+  color: #FFF;
+  opacity: 1;
+}
+.contacts__contact :-ms-input-placeholder {
+  color: #FFF;
+  opacity: 1;
+}
+.contacts__contact :focus::-webkit-input-placeholder {
+  opacity: .3;
+}
+.contacts__contact :focus::-moz-placeholder {
+  opacity: .3;
+}
+.contacts__contact :focus:-moz-placeholder {
+  opacity: .3;
+}
+.contacts__contact :focus:-ms-input-placeholder {
+  opacity: .3;
+}
+.contacts__contact-heading {
+  text-align: center;
+  font-size: 31.7px;
+  margin-bottom: 18px;
+}
+.contacts__contact-text {
+  text-align: center;
+  font-size: 16.24px;
+  margin-bottom: 55px;
+}
+.contacts__contact-button {
+  cursor: pointer;
+  width: 196px;
+  height: 36px;
+  background-color: #FFF;
+  color: #0072ff;
+  font-size: 19px;
+  padding-right: 14px;
+  text-align: right;
+  line-height: 1.9;
+  text-transform: capitalize;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+.contacts__contact-button:hover,
+.contacts__contact-button:focus,
+.contacts__contact-button:active {
+  -webkit-box-shadow: 0 0 10px #FFF;
+  box-shadow: 0 0 10px #FFF;
+  background-color: #0072ff;
+}
+.contacts__contact-button:hover,
+.contacts__contact-button:focus {
+  color: #FFF;
+}
+.contacts__contact-button:active {
+  color: #f6ff00;
+}
+.contacts__contact-button-icon {
+  position: absolute;
+  width: 37px;
+  height: 32px;
+  background-color: #dddddd;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  top: 2px;
+  left: 2px;
+}
+.contacts__contact-button-icon:before {
+  display: block;
+  content: "";
+  width: 15px;
+  height: 3px;
+  position: absolute;
+  background-color: #a0a0a0;
+  top: 15px;
+  left: 10px;
+}
+.contacts__contact-button-icon:after {
+  display: block;
+  content: "";
+  width: 6px;
+  height: 6px;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  position: absolute;
+  background-color: #a0a0a0;
+  top: 13.5px;
+  left: 23px;
 }
