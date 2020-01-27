@@ -300,44 +300,6 @@ template {
 [hidden] {
   display: none;
 }
-.contacts__contact {
-  /* webkit */
-  /* Firefox 19+ */
-  /* Firefox 18- */
-  /* IE */
-  /* webkit */
-  /* Firefox 19+ */
-  /* Firefox 18- */
-  /* IE */
-}
-.contacts__contact ::-webkit-input-placeholder {
-  color: #FFF;
-  opacity: 1;
-}
-.contacts__contact ::-moz-placeholder {
-  color: #FFF;
-  opacity: 1;
-}
-.contacts__contact :-moz-placeholder {
-  color: #FFF;
-  opacity: 1;
-}
-.contacts__contact :-ms-input-placeholder {
-  color: #FFF;
-  opacity: 1;
-}
-.contacts__contact :focus::-webkit-input-placeholder {
-  opacity: .3;
-}
-.contacts__contact :focus::-moz-placeholder {
-  opacity: .3;
-}
-.contacts__contact :focus:-moz-placeholder {
-  opacity: .3;
-}
-.contacts__contact :focus:-ms-input-placeholder {
-  opacity: .3;
-}
 @-webkit-keyframes pulse-gray {
   0% {
     -webkit-box-shadow: 0 0 0 0 rgba(144, 144, 144, 0.4);
@@ -2083,33 +2045,33 @@ header {
 .latest-posts__post-addinfo a:hover {
   color: #b2b2b2;
 }
-.contacts {
+.feedback {
   padding-top: 110px;
   padding-bottom: 110px;
 }
-.contacts__map iframe {
+.feedback__map iframe {
   width: 100%;
   margin-bottom: 10px;
 }
 @media (min-width: 992px) {
-  .contacts__map iframe {
+  .feedback__map iframe {
     width: 550px;
     height: 657px;
     margin-bottom: 0;
   }
 }
 @media (min-width: 1200px) {
-  .contacts__map iframe {
+  .feedback__map iframe {
     width: 660px;
   }
 }
 @media (min-width: 1600px) {
-  .contacts__map iframe {
+  .feedback__map iframe {
     width: 886px;
     height: 641px;
   }
 }
-.contacts__contact {
+.feedback__contact {
   background-color: #0050D5;
   padding: 49px 40px 59px;
   font-family: "Montserrat";
@@ -2125,8 +2087,8 @@ header {
   /* Firefox 18- */
   /* IE */
 }
-.contacts__contact input,
-.contacts__contact textarea {
+.feedback__contact input,
+.feedback__contact textarea {
   outline-style: none;
   background-color: #3373DD;
   border: 0px;
@@ -2136,54 +2098,54 @@ header {
   padding-right: 16px;
   color: #FFF;
 }
-.contacts__contact input {
+.feedback__contact input {
   margin-bottom: 13px;
   height: 36px;
 }
-.contacts__contact textarea {
+.feedback__contact textarea {
   margin-bottom: 64px;
   height: 225px;
   resize: none;
 }
-.contacts__contact ::-webkit-input-placeholder {
+.feedback__contact ::-webkit-input-placeholder {
   color: #FFF;
   opacity: 1;
 }
-.contacts__contact ::-moz-placeholder {
+.feedback__contact ::-moz-placeholder {
   color: #FFF;
   opacity: 1;
 }
-.contacts__contact :-moz-placeholder {
+.feedback__contact :-moz-placeholder {
   color: #FFF;
   opacity: 1;
 }
-.contacts__contact :-ms-input-placeholder {
+.feedback__contact :-ms-input-placeholder {
   color: #FFF;
   opacity: 1;
 }
-.contacts__contact :focus::-webkit-input-placeholder {
+.feedback__contact :focus::-webkit-input-placeholder {
   opacity: .3;
 }
-.contacts__contact :focus::-moz-placeholder {
+.feedback__contact :focus::-moz-placeholder {
   opacity: .3;
 }
-.contacts__contact :focus:-moz-placeholder {
+.feedback__contact :focus:-moz-placeholder {
   opacity: .3;
 }
-.contacts__contact :focus:-ms-input-placeholder {
+.feedback__contact :focus:-ms-input-placeholder {
   opacity: .3;
 }
-.contacts__contact-heading {
+.feedback__contact-heading {
   text-align: center;
   font-size: 31.7px;
   margin-bottom: 18px;
 }
-.contacts__contact-text {
+.feedback__contact-text {
   text-align: center;
   font-size: 16.24px;
   margin-bottom: 55px;
 }
-.contacts__contact-button {
+.feedback__contact-button {
   cursor: pointer;
   width: 196px;
   height: 36px;
@@ -2200,21 +2162,21 @@ header {
   margin-right: auto;
   position: relative;
 }
-.contacts__contact-button:hover,
-.contacts__contact-button:focus,
-.contacts__contact-button:active {
+.feedback__contact-button:hover,
+.feedback__contact-button:focus,
+.feedback__contact-button:active {
   -webkit-box-shadow: 0 0 10px #FFF;
   box-shadow: 0 0 10px #FFF;
   background-color: #0072ff;
 }
-.contacts__contact-button:hover,
-.contacts__contact-button:focus {
+.feedback__contact-button:hover,
+.feedback__contact-button:focus {
   color: #FFF;
 }
-.contacts__contact-button:active {
+.feedback__contact-button:active {
   color: #f6ff00;
 }
-.contacts__contact-button-icon {
+.feedback__contact-button-icon {
   position: absolute;
   width: 37px;
   height: 32px;
@@ -2224,7 +2186,7 @@ header {
   top: 2px;
   left: 2px;
 }
-.contacts__contact-button-icon:before {
+.feedback__contact-button-icon:before {
   display: block;
   content: "";
   width: 15px;
@@ -2234,7 +2196,7 @@ header {
   top: 15px;
   left: 10px;
 }
-.contacts__contact-button-icon:after {
+.feedback__contact-button-icon:after {
   display: block;
   content: "";
   width: 6px;
@@ -2245,4 +2207,113 @@ header {
   background-color: #a0a0a0;
   top: 13.5px;
   left: 23px;
+}
+footer {
+  background-color: #202020;
+  padding-top: 110px;
+  padding-bottom: 52px;
+}
+footer p {
+  font-size: 12.9px;
+  color: #B0B0B0;
+  font-weight: 500;
+  line-height: 1.6;
+  letter-spacing: -0.5px;
+}
+@media (min-width: 1200px) {
+  footer p {
+    font-size: 15.9px;
+  }
+}
+@media (min-width: 1600px) {
+  footer p {
+    font-size: 19.9px;
+  }
+}
+footer p a {
+  color: inherit;
+}
+footer p a:hover,
+footer p a:focus {
+  color: #FFF;
+  text-decoration: none;
+}
+footer p a:active {
+  color: #FFF;
+  text-shadow: #fff 0 0 5px ;
+}
+.footer__heading {
+  font-size: 20px;
+  font-weight: 600;
+  color: #FFF;
+  margin-bottom: 20px;
+  line-height: 1;
+  text-transform: uppercase;
+}
+@media (min-width: 992px) {
+  .footer__heading {
+    margin-bottom: 40px;
+  }
+}
+@media (min-width: 1200px) {
+  .footer__heading {
+    font-size: 22px;
+  }
+}
+@media (min-width: 1600px) {
+  .footer__heading {
+    font-size: 25.14px;
+  }
+}
+.footer__contacts {
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+@media (min-width: 992px) {
+  .footer__feedback-text {
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 992px) {
+  .footer__feedback-row-wrapper {
+    margin-top: -20px;
+  }
+}
+.footer__contacts-wrapper,
+.footer__tags-wrapper {
+  margin-bottom: 50px;
+}
+@media (min-width: 992px) {
+  .footer__contacts-wrapper,
+  .footer__tags-wrapper {
+    margin-bottom: 0;
+  }
+}
+.footer__row-wrapper {
+  padding-bottom: 60px;
+  border-bottom: 1px solid #8d8d8d;
+  margin-bottom: 40px;
+}
+.footer__social-icons {
+  font-size: 35px;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+.footer__social-icons div {
+  margin-right: 40px;
+}
+.footer__social-icons div:last-child {
+  margin-right: 0;
+}
+.footer__social-icons div a {
+  color: #969696;
+}
+.footer__social-icons div a:hover,
+.footer__social-icons div a:focus {
+  color: #aaaaaa;
+}
+.footer__social-icons div a:active {
+  color: #dadada;
 }
